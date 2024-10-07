@@ -1,0 +1,39 @@
+services:
+  accounts:
+    image: "afroz8220/accounts:s4"
+    container_name: accounts-ms
+    ports:
+      - "8080:8081"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - eazybank
+  loans:
+    image: "afroz8220/loans:s4"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - eazybank
+
+  cards:
+    image: "afroz8220/cards:s4"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - eazybank
+
+networks:
+  eazybank:
+    driver: "bridge"
