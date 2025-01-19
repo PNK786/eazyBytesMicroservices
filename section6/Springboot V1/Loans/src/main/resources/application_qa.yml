@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: "3.2"
+
+accounts:
+  message: "Welcome yo eazyBank bytes Loans QA Rest Api"
+  contactDetails:
+    name: "Afroz-Khan -QA Lead"
+    email: "pathanafrozkhan786@gmail.com"
+  onCallSupport:
+    +(91)9874563214
+    +(91)9631345852
