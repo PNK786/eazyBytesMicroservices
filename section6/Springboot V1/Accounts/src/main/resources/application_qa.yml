@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome yo eazyBank bytes QA Rest Api"
+  contactDetails:
+    name: "Afroz-Khan -QA Lead"
+    email: "pathanafrozkhan786@gmail.com"
+  onCallSupport:
+    -(666)852-1478
+    -(666)963-1345

@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome yo eazyBank bytes Prod Rest Api"
+  contactDetails:
+    name: "Afroz-Khan -Product Owner"
+    email: "pathanafrozkhan786@gmail.com"
+  onCallSupport:
+    -(453)852-1478
+    -(236)203-0965
