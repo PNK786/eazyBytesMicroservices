@@ -26,4 +26,29 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: "*"  # Exposes all endpoints
+  endpoint:
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+  app:
+    name: "Loans"
+    description: "Eazy Bank Loans Application"
+    version: "1.0.0"
+
+build:
+  version: "1.0.0"
