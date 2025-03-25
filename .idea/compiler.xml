@@ -14,12 +14,18 @@
         <module name="loans" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-server" target="17" />
+      <module name="loans" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Loans" options="-parameters" />
       <module name="accounts" options="-parameters" />
       <module name="cards" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="configServer" options="-parameters" />
       <module name="eurekaServer" options="-parameters" />
       <module name="loans" options="-parameters" />
     </option>
